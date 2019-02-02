@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Libre+Baskerville');
+
+body {
+
+    font-family: Bitter, arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f49f0a;
+    color: #ffffff
+
+}
+
+#logo {
+
+    width: 100px;
+
+}
+
+header {
+	
+	background-color: #ff49;
+    text-align: center;
+    
+}
+
+header img, .headings {
+
+	display: inline-block;
+	vertical-align: middle;
+    margin: 10px;
+    
+}
+
+ul {
+
+    list-style-type: none;
+   
+}
+
+ul a {
+
+    display: block;
+    width: 300px;
+
+}
+
+nav {
+
+    background-color: #b4b8ab;
+    margin-bottom: -30px;
+
+}
+nav a {
+
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -40px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff
+
+}
+
+.current {
+
+    background-color: #4f514b;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -40px;
+
+}
+
+.preston {
+
+    background-color: #4f514b;
+
+}
+
+.headings {
+
+    line-height: 1px;
+
+}
+
+.headings h1 {
+
+    font-size: 2em;
+    font-family: "Libre Baskerville", helvetica, Tahoma;
+
+}
+    
+section {
+
+        padding: 10px;
+
+}
+
+img {
+
+    width: 500px;
+
+}
+
+    
+    
+
