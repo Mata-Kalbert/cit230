@@ -1,0 +1,69 @@
+@media only screen and (min-width: 768px) {
+
+    nav li {
+        display: inline-block;
+    
+    }
+    
+    nav p {
+        display: none;
+    }
+    
+    ul {
+        display: inline-block;
+    }
+    
+    section.forecast {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    section.forecast h3 {
+        font-size: 2rem;
+    }
+    
+    section.forecast img {
+        width: 30%;
+    }
+    
+    table {
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+    table, th, td {
+        border: 1px solid black;
+      }
+    
+    th {
+        background-color: #ff49;
+        height: 50px;
+        font-size: 2rem;
+        color: #4f514b;
+    
+    }
+
+    td {
+        padding-bottom: 10px;
+    }
+    
+    article img {
+        width: 40%;
+        float: right;
+    
+    }
+    
+    .left {
+        display: inline-block;
+    }
+    
+    .contactinfo #map {
+        width: 40%;
+        display: inline-block;
+        margin-left: 200px;
+    
+    }
+
+}

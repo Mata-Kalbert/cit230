@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Libre+Baskerville');
+
+body {
+
+    font-family: Bitter, arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f49f0a;
+    color: #ffffff
+}
+
+/* Header */
+
+header {
+	
+	background-color: #ff49;
+    text-align: center;
+    
+}
+
+header img, .headings {
+
+	display: inline-block;
+	vertical-align: middle;
+    margin: 10px;
+    
+}
+
+#logo {
+
+    width: 20%;
+    float: left;
+
+}
+
+.headings .motto {
+
+    color: #ffffff;
+    font-size: 1em;
+    text-shadow: 3px 3px 5px #777;
+
+
+}
+
+.current {
+
+    color: #4f514b;
+
+}
+
+
+.headings {
+
+    line-height: 0.75rem;
+
+}
+
+.headings h1 {
+
+    font-size: 2em;
+    font-family: "Libre Baskerville", helvetica, Tahoma;
+    color: #fa8f04;
+    margin-bottom: 0px;
+    text-shadow: 3px 3px 5px #777;
+
+    
+}
+
+/* navigation */
+
+nav {
+
+    background-color: #b4b8ab;
+    margin-bottom: -30px;
+    font-size: 2rem;
+    padding: 2px;
+
+}
+
+ul {
+
+    list-style-type: none;
+    display: none;
+   
+}
+
+ul a {
+
+    display: block;
+    width: 100%;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: -40px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff
+
+}
+
+
+nav a:hover {
+    color: #fa8f04
+}
+
+/* main */
+
+section {
+
+    padding: 10px;
+    margin: 10px;
+
+}
+.firstsection h2, article h2 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 3px 3px 5px #777;
+    
+}
+
+.herodiv {
+
+    margin: auto;
+    position: relative;
+
+}
+
+#hero {
+
+    width: 100%;
+
+}
+
+.weathersummary{
+
+    position: absolute;
+    top: 50px;
+    right: 75px;
+    border: 1px solid black;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #ffffff;
+    line-height: 2px;
+
+}
+
+.weathersummary h3{
+
+    text-decoration: underline;
+    padding-bottom: 10px;
+
+}
+
+article img{
+
+    width: 95%;
+    box-shadow: 0 0 30px #ffffff;
+    
+}
+
+article {
+
+    background-color: #b4b8ab;
+    border: 2px solid #4f514b;
+    padding: 20px;
+    overflow: auto;
+
+}
+
+article h2 {
+
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+article h3{
+
+    margin-top: 0px;
+    color: #4f514b
+
+}
+
+article p {
+    color: #4f514b;
+}
+
+.contactinfo{
+    background-color: #ff49;
+    line-height: 2px;
+    font-size: 1.25rem;
+    overflow: auto;
+
+}
+
+.contactinfo h2{
+    color: #000000;
+    font-weight: bold;
+
+}
+.contactinfo h2, .contactinfo p, .socialmedia{
+
+    padding-left: 80px;
+
+}
+.socialmedia img{
+
+    width: 30px;
+    padding-bottom: 5px;
+
+}
+.contact {
+
+    padding-top: 10px;
+
+}
+#map {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+
+}
+
+/* footer */
+
+footer {
+
+    background-color: #4f514b;
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 5px;
+    line-height: 2px;
+
+}
+
+
+
+    
