@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> Weather Ahead | Preston</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Weather information about Preston Idaho, includes forecast, article and contact information">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter|Libre+Baskerville">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-7.css" type="text/css">
+        <link rel="stylesheet" href="css/medium-7.css" type="text/css">
+        <link rel="stylesheet" href="css/large-7.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/logo.jpg" alt="Weather Site Logo" id="logo">
+            <section class="headings">
+                    <h1>Weather Ahead</h1>
+                    <div class="motto">
+                        <h2>Better dry than wet </h2>
+                    </div>
+                </section>
+            <nav>
+                <ul class="mainmenu">
+                    <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a><li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-6.html" class="current">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="gallery-7.html">Gallery</a></Li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="firstsection">
+                <h2>Preston</h2>
+                <div class="herodiv">
+                    <picture class="heroimg">
+                        <source media="(max-width: 500px)" srcset="images/heroimage500.jpg">
+                        <source media="(max-width: 800px)" srcset="images/heroimage800.jpg">
+                        <source media="(max-width: 1200px)" srcset="images/heroimage1200.jpg">
+                        <img id="hero" src="images/heroimage1200.jpg" alt="Sunny Day">
+                    </picture>
+                    <section class="weathersummary">
+                        <h3>Weather Summary</h3>
+                        <p>Currently: Sunny</p>
+                        <p>High: <span id="one">76</span>F</p>
+                        <p>Wind Chill: <span id="output"></span></p>
+                        <p>Humidity: 69%</p>
+                        <p>Wind Speed: <span id="two">5</span>mph</p>
+                    </section>
+                </div>
+            </section>
+            <section class="forecast">
+                    <h3>5 Day Forecast</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><span id="day1">Wed</span></th>
+                                <th><span id="day2">Thu</span></th>
+                                <th><span id="day3">Fri</span></th>
+                                <th><span id="day4">Sat</span></th>
+                                <th><span id="day5">Sun</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/sunny.png" id="weathericonone" alt="sunnyweather"><br><span id="dayonetemp"></span>High 89&deg;F</td>
+                                <td><img src="images/sunny.png" id="weathericontwo" alt="sunnyweather"><br><span id="daytwotemp"></span>High 85&deg;F</td>
+                                <td><img src="images/sunny.png" id="weathericonthree" alt="sunnyweather"><br><span id="daythreetemp"></span>High 78&deg;F</td>
+                                <td><img src="images/sunny.png" id="weathericonfour" alt="sunnyweather"><br><span id="dayfourtemp"></span>High 80&deg;F</td>
+                                <td><img src="images/sunny.png" id="weathericonfive" alt="sunnyweather"><br><span id="dayfivetemp"></span>High 76&deg;F</td>
+    
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            <section class="article">
+                <article>
+                    <img src="images/article.jpg" alt="raining">
+                    <h2>Founders Day Fresco</h2>
+                    <h3>by Janica Juarez</h3>
+                    <p>I was recently reflecting upon the founders day event held at Foundation Park each year. I have been taking the festival for granted and have not been properly engaging in perhaps the monst popular community event of the year. In response, I contacted Ms. Sharon via email and expressed my desire to serve on the event committee. Well, you guessed it, the phone rings almost inmediately and she promptly asks me to be the event committee chair. Literally, good grief! My appreciation for the years of dedicated, generous service of volunteers and sponsors has escalated beyond what I thought I could feel for such thing and .. <a href="#">continue to full article</a> </p>                
+                </article>
+            </section>
+            <section class="contactinfo">
+                <div class="left">
+                    <div class="address">
+                        <h2>The Weather Site</h2>
+                        <p>30 N 1st E</p>
+                        <p>Preston, ID 83263</p>
+                    </div>
+                    <div class="contact">
+                        <p>&#9742; 999.999.9999 </p>
+                        <p>&#9993; theweathersite@tws.com</p>
+                    </div>
+                    <div class="socialmedia">
+                        <img src="images/face.png" alt="facebookicon">
+                        <img src="images/instagram.png" alt="instagramicon">
+                        <img src="images/twiter.png" alt="twittericon">
+                        <img src="images/pin.png" alt="pinteresticon">
+                    </div>
+                </div>
+                <img id="map" src="images/map.jpg" alt="Map of Preston">
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2019 The Weather Site | BYU- Idaho | Kabert Mata</p>
+            <span id="date"></span>
+        </footer>
+        <script src="script/currentdate.js"></script>
+        <script src="script/hamburger.js"></script>
+        <script src="script/windchill.js"></script>
+    </body>
+</html>
+
+
