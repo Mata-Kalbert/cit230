@@ -294,3 +294,54 @@ figure img {
     padding-left: 40px;
 }
 
+/* Storm Center */
+ 
+main h2 {
+    font-family: "Libre Baskerville", helvetica, Tahoma;
+    font-size: 2rem;
+    color: #ffffff;
+    padding-left: 40px;
+}
+
+main p {
+    padding-left: 40px;
+    font-size: 1rem;
+}
+
+form {
+    padding: 40px;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 2rem;
+    border-radius: 2%;
+    border: 2px solid #777777;
+    background-color: rgba(255, 255, 168, 0.6);
+}
+
+form label {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold; 
+    color: #000000;
+}
+
+.boxform{
+    width: 50%;
+}
+
+/* Thank You Page */
+
+.thanks h2 {
+    font-family: "Libre Bakesville", helvetica, Tahoma;
+    font-size: 2rem;
+    color: #ffffff;
+    padding-left: 40px;
+    text-align: center;
+}
+
+.thanks p {
+    padding-left: 40px;
+    font-size: 2rem;
+    text-align: center;
+}

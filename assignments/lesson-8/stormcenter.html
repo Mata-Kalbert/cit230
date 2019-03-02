@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> Weather Ahead | Storm Center</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Storm center page where users can send information about storms and unusual weather">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter|Libre+Baskerville">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-8.css" type="text/css">
+        <link rel="stylesheet" href="css/medium-8.css" type="text/css">
+        <link rel="stylesheet" href="css/large-8.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/logo.jpg" alt="Weather Site Logo" id="logo">
+            <section class="headings">
+                    <h1>Weather Ahead</h1>
+                    <div class="motto">
+                        <h2>Better dry than wet </h2>
+                    </div>
+                </section>
+            <nav>
+                <ul class="mainmenu">
+                    <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a><li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-8.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html" class="current" >Storm Center</a></li>
+                    <li><a href="gallery-8.html">Gallery</a></Li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Storm Report Form</h2>
+            <p>Please fill out this form to report a storm or unusual weather in your area.</p>
+            <form id="storm" method="get" action="thanks.html">
+                <div>
+                    <label for="name">Full Name: </label>
+                    <input type="text" id="name" name="firstlast" class="boxform" required pattern="[A-Za-z ]{5,}">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="eamil" class="boxform" placeholder="enter your email">
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" class="boxform" name="phone" required>
+                </div>
+                <div>
+                    <label for="zipcode">zipcode:</label>
+                    <input type="number" class="boxform" id="zipcode" name="zipcode" required>
+                </div>
+                <div>
+                    <label for="stormdate">Storm Date</label>
+                    <input type="date" class="boxform" id="stormdate" name="stormdate">
+                </div>
+                <div>
+                    <label for="stormtype">Storm Type</label>
+                    <input list="stormtype" class="boxform" id="stormtype" name="stormtype">
+                        <datalist>
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurracain"></option>
+                            <option value="thunder Strom"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                </div>
+                <div>
+                    <label for="stormsev">Storm Severity (from 1-10):</label><br>
+                    <input class="boxform" type="range" name="severity" id="stormsev" value="5" min="1" max="10" step="1" 
+                    oninput="labelRange(this.value)" onchange="labelRange(this.value)">
+                    <span id="stormnum">5</span>
+                </div>
+                <div>
+                    <label for="stormregion">Storm Region:</label>
+                    <select name="stormregion" id="stormregion">
+                        <option value="select" selected disabled>Select region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="danger">User in-danger Level:</label><br>
+                    <input type="radio" id="dangeryes" name="danger" value="yes" checked>Yes<br>
+                    <input type="radio" id="dangermaybe" name="danger" value="maybe">Maybe<br>
+                    <input type="radio" id="dangerno" name="danger" value="no">No<br>
+                </div>
+                <div>
+                    <label for="additionalinfo">Additional Information:</label><br>
+                    <textarea name="info" id="additionalinfo" form="storm" cols="30" rows="5">Enter comments here...</textarea>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2019 The Weather Site | BYU- Idaho | Kabert Mata</p>
+            <span id="date"></span>
+        </footer>
+        <script src="script/currentdate.js"></script>
+        <script src="script/hamburger.js"></script>
+        <script src="script/windchill.js"></script>
+        <script src="script/stormrange.js"></script>
+    </body>
+</html>
+
+
