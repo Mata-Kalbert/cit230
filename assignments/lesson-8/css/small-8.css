@@ -1,11 +1,12 @@
 
 body {
 
-    font-family: Bitter, arial, sans-serif;
+    font-family: "Bitter", arial, sans-serif;
     margin: 10px;
     padding: 10px;
     background-color: #f49f0a;
     color: #ffffff
+
 }
 
 /* Header */
@@ -13,60 +14,46 @@ body {
 header {
 	
 	background-color: #ff49;
-    text-align: center;
 
 }
 
-header img, .headings {
+.heading {
 
-	display: inline-block;
-	vertical-align: middle;
-    margin: 10px;
-    padding-top: 10px;
-
-    
-}
-
-#logo {
-
-    display: inline-flex;
-    width: 16%;
-
+    display: flex;
 
 }
 
-.headings .motto {
+header .column {
 
-    color: #ffffff;
-    font-size: 1em;
-    text-shadow: 3px 3px 5px #777;
-
-
-}
-
-.current {
-
-    color: #ff49;
-
-}
-
-
-.headings {
-
-    line-height: 0.75rem;
     display: flex;
     flex-direction: column;
 
 }
 
-.headings h1 {
+#logo {
 
-    font-size: 2em;
+    width: 90%;
+
+}
+
+header h1, header h2 {
+
+    display: flex;
+
+}
+
+header h2 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+header h1 {
+
+    font-size: 3em;
     font-family: "Libre Baskerville", helvetica, Tahoma;
     color: #fa8f04;
     margin-bottom: 0px;
     text-shadow: 3px 3px 5px #777;
-
     
 }
 
@@ -114,10 +101,9 @@ nav {
 
 }
 
-.mainmenu .current {
-    color: #777;
+.mainmenu a:visited {
+    color: #ffffff;
 }
-
 .mainmenu a:hover {
     color: #fa8f04;
     background-color: #777; 
@@ -127,7 +113,21 @@ nav {
     display: block;
 }
 
+.current {
+
+    color: #ff49;
+
+}
+
 /* Main */
+
+main {
+
+    background-color: #f7b35b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
 
 section {
 
@@ -135,10 +135,14 @@ section {
     margin: 10px;
 
 }
+
 .firstsection h2, article h2 {
+
     text-align: center;
     font-size: 2rem;
     text-shadow: 3px 3px 5px #777;
+    margin-top: 0;
+    margin-bottom: 1rem;
     
 }
 
@@ -160,13 +164,14 @@ main picture img {
 .weathersummary{
 
     position: absolute;
-    top: 50px;
-    right: 75px;
+    top: 5%;
+    right: 10%;
     border: 1px solid black;
-    padding: 1.5rem;
+    padding: 0.5rem;
     box-shadow: 0 0 30px #ffffff;
     line-height: 2px;
-    width: 20%;
+    font-weight: bold;
+    background-color: rgba(124, 115, 124, 0.5);
 
 }
 
@@ -174,24 +179,31 @@ main picture img {
 
     text-decoration: underline;
     padding-bottom: 10px;
-    font-size: 0.25rem;
+    font-size: 0.75rem;
+    text-align: center;
 
 }
 
 .weathersummary p{
-    font-size: 0.25rem;
+
+    font-size: 0.75rem;
+    text-align: left;
+
 }
 
 .forecast {
+
     display: none;
+
 }
 
 /* Article Section */
 
-article img{
+article img {
 
     width: 95%;
     box-shadow: 0 0 30px #ffffff;
+    margin-left: 20px;
     
 }
 
@@ -208,36 +220,50 @@ article h2 {
 
     text-align: left;
     font-size: 1.5rem;
-    margin-bottom: 0;
-}
-article h3{
+    margin-bottom: 5px;
 
-    margin-top: 0px;
-    color: #4f514b
+}
+
+article h3 {
+
+    margin-top: 5px;
+    color: #4f514b;
+    padding-left: 40px;
 
 }
 
 article p {
+
     color: #4f514b;
+
 }
 
 /* Contact Section */
 
-.contactinfo{
+.contactinfo {
+
     background-color: #ff49;
     line-height: 2px;
-    font-size: 1.25rem;
     overflow: auto;
 
 }
 
-.contactinfo h2{
+.contactinfo h2 {
+
     color: #000000;
     font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
 
 }
 
-.socialmedia img{
+.contactinfo h2, .contactinfo p, .socialmedia {
+
+    padding-left: 80px;
+
+}
+
+.socialmedia img {
 
     width: 30px;
     padding-bottom: 5px;
@@ -248,6 +274,7 @@ article p {
     padding-top: 10px;
 
 }
+
 #map {
 
     display: block;
@@ -264,7 +291,7 @@ footer {
 
     background-color: #4f514b;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.75rem;
     padding: 20px;
     padding-bottom: 30px;
     line-height: 5px;
@@ -274,41 +301,58 @@ footer {
 /* Gallery */
 
 .gallerywrapper {
+
     display: grid;
     grid-template-columns: 1fr;
+
 }
 
 figure img {
+
     width: 100%;
+
 }
 
 .box {
+
     padding: 2px;
     box-shadow: 0 0 10px #777777;
+
 }
 
 .gallerytitle {
+
     font-family: "Libre Baskerville", helvetica, Tahoma;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #ffffff;
     padding-left: 40px;
+    text-shadow: 3px 3px 5px #777;
+
 }
 
 /* Storm Center */
  
 main h2 {
+
     font-family: "Libre Baskerville", helvetica, Tahoma;
     font-size: 2rem;
     color: #ffffff;
     padding-left: 40px;
+    text-shadow: 3px 3px 5px #777;
+    margin-bottom: 0;
+
 }
 
 main p {
+
     padding-left: 40px;
     font-size: 1rem;
+    margin-top: 0;
+
 }
 
 form {
+
     padding: 40px;
     width: 80%;
     margin: 0px auto;
@@ -316,32 +360,48 @@ form {
     border-radius: 2%;
     border: 2px solid #777777;
     background-color: rgba(255, 255, 168, 0.6);
+
 }
 
 form label {
+
     display: block;
     padding: 1rem;
     font-size: 1rem;
     font-weight: bold; 
     color: #000000;
+
 }
 
 .boxform{
+
     width: 50%;
+
+}
+
+.comments {
+
+    overflow: scroll;
+    width: 80%;
+
 }
 
 /* Thank You Page */
 
 .thanks h2 {
+
     font-family: "Libre Bakesville", helvetica, Tahoma;
     font-size: 2rem;
     color: #ffffff;
     padding-left: 40px;
     text-align: center;
+
 }
 
 .thanks p {
+
     padding-left: 40px;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
+
 }
