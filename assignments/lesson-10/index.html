@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> Weather Ahead | Home</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Homepage for Weather Ahead. Includes basic information for the towns of Preston, Soda Springs and Fish Haven">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter|Libre+Baskerville">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-10.css" type="text/css">
+        <link rel="stylesheet" href="css/medium-10.css" type="text/css">
+        <link rel="stylesheet" href="css/large-10.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <div class="heading">
+                <div class="column">
+                    <img src="images/logo.jpg" alt="Weather Site Logo" id="logo">
+                </div>
+                <div class="column">
+                    <h1>Weather Ahead</h1>
+                    <h2>Better dry than wet </h2>
+                </div>
+            </div> 
+            <nav>
+                <ul class="mainmenu">
+                    <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a><li>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="preston-10.html" >Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-10.html">Gallery</a></Li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="firstsection">
+                <h2>Weather Ahead</h2>
+            </section>
+            <section id="townsinfo"></section>
+            <section class="contactinfo">
+                <div class="left">
+                    <div class="address">
+                        <h2>The Weather Site</h2>
+                        <p>30 N 1st E</p>
+                        <p>Preston, ID 83263</p>
+                    </div>
+                    <div class="contact">
+                        <p>&#9742; 999.999.9999 </p>
+                        <p>&#9993; theweathersite@tws.com</p>
+                    </div>
+                    <div class="socialmedia">
+                        <img src="images/face.png" alt="facebookicon">
+                        <img src="images/instagram.png" alt="instagramicon">
+                        <img src="images/twiter.png" alt="twittericon">
+                        <img src="images/pin.png" alt="pinteresticon">
+                    </div>
+                </div>
+                <img id="map" src="images/map.jpg" alt="Map of Preston">
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2019 The Weather Site | BYU- Idaho | Kabert Mata</p>
+            <span id="date"></span>
+        </footer>
+        <script src="script/currentdate.js"></script>
+        <script src="script/hamburger.js"></script>
+        <script src="script/windchill.js"></script>
+        <script src="script/towninfo.js"></script>
+    </body>
+</html>
+
+

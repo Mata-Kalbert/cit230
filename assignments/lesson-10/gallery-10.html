@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Preston | Anytime Weather</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Weather information about Preston Idaho, includes forecast, article and contact information">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter|Libre+Baskerville">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-10.css" type="text/css">
+        <link rel="stylesheet" href="css/medium-10.css" type="text/css">
+        <link rel="stylesheet" href="css/large-10.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <div class="heading">
+                <div class="column">
+                    <img src="images/logo.jpg" alt="Weather Site Logo" id="logo">
+                </div>
+                <div class="column">
+                    <h1>Weather Ahead</h1>
+                    <h2>Better dry than wet </h2>
+                </div>
+            </div> 
+            <nav>
+                <ul class="mainmenu">
+                    <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston-10.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-10.html" class="current">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+           <h2 class="gallerytitle">Weather Gallery</h2>
+           <div class="gallerywrapper">
+                <div>
+                    <figure class="box">
+                        <img src="images/gallery1.jpg" alt="Long Island beach">
+                        <figcaption>In Long Island, the summers are warm and humid; the winters are very cold, wet, and windy; and it is partly cloudy year round.</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="box">
+                        <img src="images/gallery2.jpg" alt="Thunderstom">
+                        <figcaption>The typical thunderstorm is 15 miles in diameter and lasts an average of 30 minutes.</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="box">
+                        <img src="images/gallery3.jpg" alt="Tornado">
+                        <figcaption>Most of the world’s tornadoes occur in the United States in what’s known as Tornado Alley.</figcaption>
+                    </figure>  
+                </div>
+                <div>
+                    <figure class="box">
+                        <img src="images/gallery4.jpg" alt="Thunderstorm">
+                        <figcaption>Nearly 1,800 thunderstorms are happening at any moment around the world. That's 16 million a year.</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="box">
+                        <img src="images/gallery5.jpg" alt="View of clouds">
+                        <figcaption>There are a range of different types of clouds, the main types include stratus, cumulus and cirrus.</figcaption>
+                        </figure>
+                </div>
+                <div>
+                    <figure class="box">
+                        <img src="images/gallery6.jpg" alt="Maine lighthouse">
+                        <figcaption>Maine is divided into three climatological divisions: Coastal, Southern Interior, and Northern Interior. </figcaption>
+                    </figure>
+                </div>
+           </div>
+           <section class="contactinfo">
+            <div class="left">
+                <div class="address">
+                    <h2>The Weather Site</h2>
+                    <p>30 N 1st E</p>
+                    <p>Preston, ID 83263</p>
+                </div>
+                <div class="contact">
+                    <p>&#9742; 999.999.9999 </p>
+                    <p>&#9993; theweathersite@tws.com</p>
+                </div>
+                <div class="socialmedia">
+                    <img src="images/face.png" alt="facebookicon">
+                    <img src="images/instagram.png" alt="instagramicon">
+                    <img src="images/twiter.png" alt="twittericon">
+                    <img src="images/pin.png" alt="pinteresticon">
+                </div>
+            </div>
+            <img id="map" src="images/map.jpg" alt="Map of Preston">
+        </section>
+        </main>
+        <footer>
+            <p>&copy; 2019 The Weather Site | BYU- Idaho | Kalbert Mata</p>
+            <span id="date"></span>
+        </footer>
+        <script src="script/currentdate.js"></script>
+        <script src="script/hamburger.js"></script>
+    </body>
+</html>
