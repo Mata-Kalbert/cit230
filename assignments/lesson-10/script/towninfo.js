@@ -14,8 +14,7 @@ var section = document.getElementById("townsinfo");
                 var towndetails = jsonObj['towns'];
 
                 for (var i = 0; i < towndetails.length; i++ ) {
-                    if (i === 0 || i === 2 || i === 3 || i === 6) {
-                        continue; }
+                    if (towndetails[i].name === 'Fish Haven' || towndetails[i].name === 'Preston' || towndetails[i].name === 'Soda Springs') {
                     var myArticle = document.createElement('article');
                     myArticle.className = "column";
                     var myH2 = document.createElement('h2');
@@ -32,13 +31,13 @@ var section = document.getElementById("townsinfo");
                     myPara2.textContent = 'Population: ' + towndetails[i].currentPopulation;
                     myPara3.textContent = 'Annual Rain Fall: ' + towndetails[i].averageRainfall;
 
-                    if (i === 1)
+                    if (towndetails[i].name === 'Fish Haven')
                         image.setAttribute('src', 'images/fishhaven.jpg');
                         image.setAttribute('alt', 'Town of Fish Haven');
-                    if (i === 4)
+                    if (towndetails[i].name === 'Preston')
                         image.setAttribute('src', 'images/preston.jpg');
                         image.setAttribute('alt', 'Town of Preston');
-                    if (i === 5)
+                    if (towndetails[i].name === 'Soda Springs')
                         image.setAttribute('src','images/sodasprings.jpg');
                         image.setAttribute('alt', 'Town of Soda Springs');
                 
@@ -52,3 +51,4 @@ var section = document.getElementById("townsinfo");
                     section.appendChild(myArticle);
                     }
                 }
+            }
