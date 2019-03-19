@@ -21,14 +21,15 @@ fRequest.onload =  function () {
             tempForecast[day] = weatherData.list[i].main.temp;
             day++;
 
+            let iconCode = weatherData.list[i].weather["0"].icon;
+            let iconPath = "https://openweathermap.org/img/w/" + iconCode + ".png";
+            icon.push(iconPath);
         }
 
     }
     for ( let i = 1; i <=5; i++) {
         document.getElementById('temp'+ i).innerHTML = tempForecast[i];
         document.getElementById('day' + i).innerHTML = dayWeek[i - 1];
-
-
-
+        document.getElementById('icon' + i).src = icon[i - 1];
     }
 }
