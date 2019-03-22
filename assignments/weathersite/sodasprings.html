@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="css/medium.css" type="text/css">
         <link rel="stylesheet" href="css/large.css" type="text/css">
     </head>
-
     <body>
         <header>
             <div class="heading">
@@ -52,34 +51,32 @@
                         <p>Wind Chill: <span id="output"></span></p>
                         <p>Humidity: <span id="humidity"></span></p>
                         <p>Wind Speed: <span id="speed"></span>mph</p>
-                        
                     </section>
                 </div>
             </section>
             <section class="forecast">
-                    <h3>5 Day Forecast</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th><span id="day1"></span></th>
-                                <th><span id="day2"></span></th>
-                                <th><span id="day3"></span></th>
-                                <th><span id="day4"></span></th>
-                                <th><span id="day5"></span></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img id="icon1"><br><span id="temp1"></span>&deg;F</td>
-                                <td><img id="icon2"><br><span id="temp2"></span>&deg;F</td>
-                                <td><img id="icon3"><br><span id="temp3"></span>&deg;F</td>
-                                <td><img id="icon4"><br><span id="temp4"></span>&deg;F</td>
-                                <td><img id="icon5"><br><span id="temp5"></span>&deg;F</td>
-    
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+                <h3>5 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><span id="day1"></span></th>
+                            <th><span id="day2"></span></th>
+                            <th><span id="day3"></span></th>
+                            <th><span id="day4"></span></th>
+                            <th><span id="day5"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img id="icon1"><br><span id="temp1"></span>&deg;F</td>
+                            <td><img id="icon2"><br><span id="temp2"></span>&deg;F</td>
+                            <td><img id="icon3"><br><span id="temp3"></span>&deg;F</td>
+                            <td><img id="icon4"><br><span id="temp4"></span>&deg;F</td>
+                            <td><img id="icon5"><br><span id="temp5"></span>&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <section class="article">
                 <article>
                     <img src="images/sodaspringsarticle.jpg" alt="Soda springs geyser">
@@ -114,12 +111,13 @@
         </main>
         <footer>
             <p>&copy; 2019 The Weather Site | BYU- Idaho | Kabert Mata</p>
+            <p>Openweathermap.org</p>
             <span id="date"></span>
         </footer>
-        <script src="script/weather.js"></script>
-        <script src="script/forecast.js"></script>
-        <script src="script/events.js"></script>
+        <script src="script/sodaspringsweather.js"></script>
+        <script src="script/sodaspringsforecast.js"></script>
         <script src="script/currentdate.js"></script>
         <script src="script/hamburger.js"></script>
-        </body>
+        <script src="script/sodaspringsevents.js"></script>
+    </body>
 </html>
