@@ -136,11 +136,8 @@
 
         display: grid;
         grid-template-columns: 1fr 1fr;
-
     }
-
     /* Home */
-
     #townsinfo {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
