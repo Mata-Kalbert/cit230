@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title> Weather Ahead | Storm Center</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Storm center page where users can send information about storms and unusual weather">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter|Libre+Baskerville">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css" type="text/css">
+        <link rel="stylesheet" href="css/medium.css" type="text/css">
+        <link rel="stylesheet" href="css/large.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <div class="heading">
+                <div class="column">
+                    <img src="images/logo.jpg" alt="Weather Site Logo" id="logo">
+                </div>
+                <div class="column">
+                    <h1>Weather Ahead</h1>
+                    <h2>Better dry than wet </h2>
+                </div>
+            </div>    
+            <nav>
+                <ul class="mainmenu">
+                    <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a><li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html" class="current" >Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></Li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Storm Report Form</h2>
+            <p>Please fill out this form to report a storm or unusual weather in your area.</p>
+            <form id="storm" method="get" action="thanks.html">
+                <div>
+                    <label>Full Name: </label>
+                    <input name="firstlast" class="boxform" required pattern="[A-Za-z ]{5,}">
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" name="eamil" class="boxform" placeholder="enter your email">
+                </div>
+                <div>
+                    <label>Phone Number:</label>
+                    <input type="tel" class="boxform" name="phone" required>
+                </div>
+                <div>
+                    <label>zipcode:</label>
+                    <input type="number" class="boxform" name="zipcode" required>
+                </div>
+                <div>
+                    <label>Storm Date</label>
+                    <input type="date" class="boxform" name="stormdate">
+                </div>
+                <div>
+                    <label>Storm Type</label>
+                    <input list="stormtype" class="boxform" name="stormtype">
+                        <datalist id="stormtype">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurracane"></option>
+                            <option value="Thunder Storm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                </div>
+                <div>
+                    <label>Storm Severity (from 1-10):</label><br>
+                    <input type="range" name="severity" value="5" min="1" max="10" step="1" 
+                    oninput="labelRange(this.value)" onchange="labelRange(this.value)">
+                    <span id="stormnum">5</span>
+                </div>
+                <div>
+                    <label>Storm Region:</label>
+                    <select name="stormregion">
+                        <option value="select" selected disabled>Select region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </div>
+                <div>
+                    <label>User in-danger Level:</label><br>
+                    <input type="radio" name="danger" value="yes" checked>Yes<br>
+                    <input type="radio" name="danger" value="maybe">Maybe<br>
+                    <input type="radio" name="danger" value="no">No<br>
+                </div>
+                <div>
+                    <label>Additional Information:</label><br>
+                    <textarea class="comments" name="info" form="storm" cols="30" rows="5">Enter comments here...</textarea>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+            <section class="contactinfo">
+                <div class="left">
+                    <div class="address">
+                        <h2>The Weather Site</h2>
+                        <p>30 N 1st E</p>
+                        <p>Preston, ID 83263</p>
+                    </div>
+                    <div class="contact">
+                        <p>&#9742; 999.999.9999 </p>
+                        <p>&#9993; theweathersite@tws.com</p>
+                    </div>
+                    <div class="socialmedia">
+                        <img src="images/face.png" alt="facebookicon">
+                        <img src="images/instagram.png" alt="instagramicon">
+                        <img src="images/twiter.png" alt="twittericon">
+                        <img src="images/pin.png" alt="pinteresticon">
+                    </div>
+                </div>
+                <img id="map" src="images/map.jpg" alt="Map of Preston">
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2019 The Weather Site | BYU- Idaho | Kabert Mata</p>
+            <span id="date"></span>
+        </footer>
+        <script src="script/currentdate.js"></script>
+        <script src="script/hamburger.js"></script>
+        <script src="script/stormrange.js"></script>
+    </body>
+</html>
+
+
