@@ -64,7 +64,7 @@ nav {
 .mainmenu li {
     display: none;
 }
- .mainmenu a {
+.mainmenu a {
     display: block;
     padding: .75rem;
     text-align: center;
@@ -247,6 +247,10 @@ iframe {
 .weddinggallery img {
     display: block;
     margin: 0 auto;
+}
+
+.weddinggallery img {
+    width: 100%;
 }
 
 /*suites*/
