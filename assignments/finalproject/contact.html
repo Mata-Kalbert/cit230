@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title> The Temple Inn Suites | Contact</title>
+        <meta charset="utf-8">
+        <meta name="description" content=" Contact page for the Temple Inn and suites, the hotel chain that serves the Latter Day Saints community.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Domine%7CMontserrat" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css" type="text/css">
+        <link rel="stylesheet" href="css/medium.css" type="text/css">
+        <link rel="stylesheet" href="css/large.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <img src="images/templelogo.png" alt=" Temple logo for the Temple Inn and suites.">
+            <h1> The Temple Inn and Suites </h1>
+            <h2> Where you can serve, dine and sleep </h2>
+        </div>
+        <nav>
+            <ul class="mainmenu">
+                <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservations.html">Reservations</a></li> 
+                <li><a href="contact.html" class="current">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Contact Us</h3>
+        <h4> For questions and concerns, please complete out the following form.</h4>
+        <form action="thankyou.html">
+            <h4>Guest Information</h4>
+            <div class="guest">
+                <label>Full Name: </label>
+                <input name="firstlast" class="boxform" required pattern="[A-Za-z ]{5,}" placeholder="Enter your name">
+            </div>
+            <div class="guest">
+                <label>Email:</label>
+                <input type="email" name="eamil" class="boxform" placeholder="enter your email">
+            </div>
+            <div class="guest">
+                <label>Phone Number:</label>
+                <input type="tel" class="boxform" name="phone" placeholder="Enter your phone number">
+            </div>
+            <h4>Comments and requests: </h4>
+            <div>
+                <textarea class="comments" name="info" cols="30" rows="10">Please feel free to add a comment or submit a request here...</textarea>
+            </div>
+            <div>
+            <input type="submit" class="buttonreserv">
+            </div>
+        </form>
+        <div class="contactmap">
+            <h4>Our Headquarters are located in Bethesda, MD</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370285054!2d-77.09772048500909!3d38.98325594948435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554875289926!5m2!1sen!2sus"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <div class="address">
+                <h3>The Temple Inn and Suites</h3>
+                <P>4800 Montgomery Ln #300</P>
+                <p>Bethesda, MD 20814</p>
+            </div>
+            <div class="phoneemail">
+                <p>999.999.999</p>
+                <p>costumerservice@templesinn.com</p>
+            </div>
+            <div class="socialmedia">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/instagram.png" alt="instagram">
+                <img src="images/twiter.png" alt="twiter">
+            </div>
+        </div>
+        <div class="footer">
+            <a href="resources.html">Resources</a>
+            <p>&copy; 2019 The Temples Inn and Suites | BYU-Idaho | Kalbert Mata</p>
+            <span id="date"></span>
+        </div>
+    </footer>
+    <script src="script/hamburger.js"></script>
+    <script src="script/currentdate.js"></script>
+</body>
+</html>

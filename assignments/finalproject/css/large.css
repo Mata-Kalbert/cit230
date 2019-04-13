@@ -1,0 +1,53 @@
+@media only screen and (min-width: 1000px) {
+    /* Navigation */
+
+    .mainmenu li:first-child { 
+        display: none;	
+    }
+    .mainmenu li {
+        display: inline-block;
+    }
+    .mainmenu ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .mainmenu a {
+        text-decoration: none;
+        font-size: 1.5rem;            
+        width: 100%;
+        text-align: center;
+        padding: .5rem;
+    }
+    h1 {
+        font-family: "domine", serif;
+        text-align: center;
+        font-size: 3rem;
+        color: #b0adb0;
+    }
+    h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #eeece4;
+    }
+
+    /*reservation */
+
+    select {
+        width: 20%;
+    }
+
+    /*services */
+    
+    .hotelservices li{
+        font-size: 1rem;
+    }
+
+    /*main temple page*/
+
+    .templepagediv {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2%;
+    }
+
+}

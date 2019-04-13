@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title> The Temple Inn Suites | Full-Time Temple Missionaries</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Full-time Temple Missionaries page for the Temple Inn and suites, the hotel chain that serves the Latter Day Saints community.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Domine%7CMontserrat" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css" type="text/css">
+        <link rel="stylesheet" href="css/medium.css" type="text/css">
+        <link rel="stylesheet" href="css/large.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <img src="images/templelogo.png" alt=" Temple logo for the Temple Inn and suites.">
+            <h1> The Temple Inn and Suites </h1>
+            <h2> Where you can serve, dine and sleep </h2>
+        </div>
+        <nav>
+            <ul class="mainmenu">
+                <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="services.html" class="current">Services</a></li>
+                <li><a href="reservations.html">Reservations</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>Full-Time Temple Missionaries</h3>
+        <p>At The Temple Inn and Suites your comfort is important to us, whether you stay for a night or six months. The following accomodations will help you feel at home during your temple mission: </p>
+        <div class="weddinggallery">
+                <img src="images/suites1.jpg" alt="Suites at Temple Inn and Suites">
+                <img src="images/suites2.jpg" alt="Suites Reception at Temple Inn and Suites">
+            </div>
+        <div class="suites">
+            <div>
+                <h4>One Bedroom Suites</h4>
+                <ul>
+                    <li>Average 564 ft2</li>
+                    <li>Sleeps 1-4 people</li>
+                    <li>Spacious living room with sofa bed</li>
+                    <li>Separate bedroom</li>
+                    <li>In-suite work space facing window</li>
+                    <li>Fully equipped kitchen with expansive dining bar</li>
+                    <li>Spacious bathroom with an extra large shower</li>
+                    <li>Luxury bedding and linens</li>
+                    <li>Free Wi-Fi</li>
+                    <li>2 televisions</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Two Bedroom Suites</h4>
+                <ul>
+                    <li>Average 739 ft2</li>
+                    <li>Sleeps 1-6 people</li>
+                    <li>Spacious living room with sofa bed</li>
+                    <li>Two separate bedrooms</li>
+                    <li>In-suite work space facing window</li>
+                    <li>Fully equipped kitchen with stove</li>
+                    <li>Dining area seats four</li>
+                    <li>Two spacious bathrooms</li>
+                    <li>Luxury bedding and linens</li>
+                    <li>Free Wi-Fi</li>
+                    <li>3 televisions</li>
+                </ul>
+            </div>
+        </div>
+        <form action="thankyou.html">
+                <h4>Guest Information</h4>
+                <div class="guest">
+                    <label>Full Name: </label>
+                    <input name="firstlast" class="boxform" required pattern="[A-Za-z ]{5,}" placeholder="Enter your name">
+                </div>
+                <div class="guest">
+                    <label>Email:</label>
+                    <input type="email" name="eamil" class="boxform" placeholder="enter your email">
+                </div>
+                <div class="guest">
+                    <label>Phone Number:</label>
+                    <input type="tel" class="boxform" name="phone" placeholder="Enter your phone number">
+                </div>
+                <h4>Comments and requests: </h4>
+                <div>
+                    <textarea class="comments" name="info" cols="30" rows="10">Please feel free to add a comment or submit a request here...</textarea>
+                </div>
+                <div>
+                <input type="submit" class="buttonreserv">
+                </div>
+            </form>
+    </main>
+    <footer>
+        <div class="contact">
+            <div class="address">
+                <h3>The Temple Inn and Suites</h3>
+                <P>4800 Montgomery Ln #300</P>
+                <p>Bethesda, MD 20814</p>
+            </div>
+            <div class="phoneemail">
+                <p>999.999.999</p>
+                <p>costumerservice@templesinn.com</p>
+            </div>
+            <div class="socialmedia">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/instagram.png" alt="instagram">
+                <img src="images/twiter.png" alt="twiter">
+            </div>
+        </div>
+        <div class="footer">
+            <a href="resources.html">Resources</a>
+            <p>&copy; 2019 The Temples Inn and Suites | BYU-Idaho | Kalbert Mata</p>
+            <span id="date"></span>
+        </div>
+    </footer>
+    <script src="script/hamburger.js"></script>
+    <script src="script/currentdate.js"></script>
+</body>
+</html>

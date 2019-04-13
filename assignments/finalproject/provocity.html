@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title> The Temple Inn Suites | Provo City Center Temple</title>
+        <meta charset="utf-8">
+        <meta name="description" content=" Provo City Center Temple page for the Temple Inn and suites, the hotel chain that serves the Latter Day Saints community.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Domine%7CMontserrat" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css" type="text/css">
+        <link rel="stylesheet" href="css/medium.css" type="text/css">
+        <link rel="stylesheet" href="css/large.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <img src="images/templelogo.png" alt=" Temple logo for the Temple Inn and suites.">
+            <h1> The Temple Inn and Suites </h1>
+            <h2> Where you can serve, dine and sleep </h2>
+        </div>
+        <nav>
+            <ul class="mainmenu">
+                <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html" class="current">Temples</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservations.html">Reservations</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="templediv">
+            <div>
+                <h3>Provo City Center Temple</h3>
+                <h4>Address:</h4>
+                <p>50 South University Ave</p>
+                <p>Provo UT 84601</p>
+                <p>United States</p>
+                <h4>Telephone:</h4>
+                <p>801-343-2700</p>
+                <h4>Services</h4>
+                <p>Clothing rental available</p>
+                <p>No Cafeteria available</p>
+                <p>No patron housing available</p>
+                <p>Distribution center nearby</p>
+                <h4>History</h4>
+                <p>1 October 2011: Announced</p>
+                <p>12 May 2012: Groundbreaking</p>
+                <p>20 March 2016: Dedicated</p>
+            </div>
+            <img src="images/provcitytemple.jpg" alt="Provo City Center Temple">
+        </div>
+        <div class="schedule">
+            <h4>Ordinance Schedule: Baptism</h4>
+            <p>Monday: Closed</p>
+            <p>Tuesday: 6:00 AM - 8:00 PM (Walk-ins Only)</p>
+            <p>Wednesday: 6:00 AM - 8:00 PM (Walk-ins Only)</p>
+            <p>Thursday: 6:00 AM - 8:00 PM (Walk-ins Only)</p>
+            <p>Friday: 6:00 AM - 8:00 PM (Walk-ins Only)</p>
+            <p>Saturday: 6 AM - 8:00 PM (Walk-ins and appointments), 2:00 PM - 7:00 PM (Family Priority Time)</p>
+            <p>Sunday: Closed</p>
+            <h4>Ordinance Schedule: Initiatory</h4>
+            <p>Monday: Closed</p>
+            <p>Tuesday: 6:00 AM - 8:00 PM (Walk-ins Only)</p>
+            <p>Wednesday: 6:00 AM - 8:00 PM (Walk-ins Only)</p>
+            <p>Thursday: 6:00 AM - 8:00 PM (Walk-ins Only)</p>
+            <p>Friday: 6:00 AM - 8:00 PM (Walk-ins Only)</p>
+            <p>Saturday: 6:00 AM - 8:00 PM (Walk-ins Only)</p>
+            <p>Sunday: Closed</p>
+            <h4>Ordinance Schedule: Endowment</h4>
+            <p>Monday: Closed</p>
+            <p>Tuesday: 6:00 AM - 8:00 PM on the hour (Walk-ins Only)</p>
+            <p>Wednesday: 6:00 AM - 8:00 PM on the hour (Walk-ins Only)</p>
+            <p>Thursday: 6:00 AM - 8:00 PM on the hour (Walk-ins Only)</p>
+            <p>Friday: 6:00 AM - 8:00 PM on the hour (Walk-ins Only)</p>
+            <p>Saturday: 6:00 AM - 8:00 PM on the hour (Walk-ins Only), 6:00 PM (Walk-ins and Appointments - Spanish)</p>
+            <p>Sunday: Closed</p>
+            <h4>Ordinance Schedule: Sealing</h4>
+            <p>To schedule living ordinances (such as own endowment or sealing) or group visits, please call: (1) 801-343-2700 </p>
+      </div>
+      <div class="templedetails">
+            <div class="templeclosures" id="provoclosures">
+                <h4>Temple Closures</h4>
+            </div>
+            <div class="weathersummary">
+                <h4>Current Weather </h4>
+                <ul>
+                    <li>Currently: <span id="current"></span></li>
+                    <li>High: <span id="high"></span>F</li> 
+                    <li>Wind Chill: <span id="output"></span> F</li>
+                    <li>Humidity: <span id="humidity"></span></li>
+                    <li>Wind Speed: <span id="speed"></span>mph</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <div class="address">
+                <h3>The Temple Inn and Suites</h3>
+                <P>4800 Montgomery Ln #300</P>
+                <p>Bethesda, MD 20814</p>
+            </div>
+            <div class="phoneemail">
+                <p>999.999.999</p>
+                <p>costumerservice@templesinn.com</p>
+            </div>
+            <div class="socialmedia">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/instagram.png" alt="instagram">
+                <img src="images/twiter.png" alt="twiter">
+            </div>
+        </div>
+        <div class="footer">
+            <a href="resources.html">Resources</a>
+            <p>&copy; 2019 The Temples Inn and Suites | BYU-Idaho | Kalbert Mata</p>
+            <span id="date"></span>
+        </div>
+    </footer>
+    <script src="script/hamburger.js"></script>
+    <script src="script/currentdate.js"></script>
+    <script src="script/provoclosures.js"></script>
+    <script src="script/weatherprovo.js"></script>
+</body>
+</html>

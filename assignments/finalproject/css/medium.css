@@ -1,0 +1,96 @@
+@media only screen and (min-width: 760px) {
+    /* main Fixture temple */
+
+    .maindiv {
+        background-color: #2f2c38;
+        display: grid;
+        grid-template-columns: 1fr 1.6fr;
+    }
+    .maindiv img{
+        width: 95%;
+        margin: 2%;
+    }
+    .fixturediv {
+        text-align: center;
+        margin-right: 3%;
+        padding-top: 10%;
+        color: #eeece4;
+        font-size: .75rem;
+        overflow: scroll;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+    header img {
+        width: 13%;
+    }
+
+    /*Reservation*/
+
+    form {
+        padding: 2em;
+    }
+    .guest input {
+        font-size: 1rem;
+    }
+    select {
+        width: 90%;
+    }
+
+    /*Services*/
+
+    .hotelservices {
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+    }
+    .hotelservices ul{
+        padding: 8% 10% 0 10%;
+    }
+    .hotelservices li {
+        font-size: .6rem;
+    }
+    .serviceslink {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+    }
+
+    /*receptions*/
+
+    .weddinggallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*suites*/
+
+    .suites {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*main individual temples*/
+    
+    .templediv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*main temple page*/
+    .templepagediv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+    }
+    .templedetails {
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+    }
+    
+}
+    
